@@ -2,11 +2,43 @@
 <html>
     <head>
         <title>Welcome to Itera</title>
-        meta charset="utf-8">
+        <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="/css/external.css">
         <link rel="icon" type="image/jpg" href="/images/something.png">
     </head>
 <body>
-    <header>Welcome to the Itera Park Serveillance Solution</header>
+    <header id="header1">Welcome to the Itera Park Serveillance Solution</header>
+    <p>The date and time is: 
+        <p id="datetime"></p>
+    </p>
+    <!--<script type="text/javascript">
+            var d = new Date();
+            var d1 = new Date().toDateString();
+            var t1 = d.getHours();
+            var t2 = d.getMinutes();
+            var t3 = d.getSeconds();
+            document.getElementById("datetime").innerHTML = (t1 + ":" + t2 + "\n" + d1);
+            //document.write(t1 + ":" + t2 + "\n" + d1);
+    </script>-->
+    <script type="text/javascript">
+    function updateTime() {
+        var d = new Date();
+        var d1 = new Date().toDateString();
+        var t1 = d.getHours();
+        var t2 = d.getMinutes();
+        var t3 = d.getSeconds();
+        document.getElementById("datetime").innerHTML = (t1 + ":" + t2 + "\n" + d1);
+
+setTimeout(updateTime,1000);
+        
+    }
+updateTime();
+    
+    
+    
+    </script>
+    
 </body>
+
+<footer><i>Copyright &copy <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script></footer>
 </html>
