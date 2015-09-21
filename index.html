@@ -7,24 +7,13 @@
         <link rel="icon" type="image/jpg" href="/images/something.png">
         <script src="javascript/external.js" type="text/javascript"></script>
     </head>
-<body onload="updateTime()">
+<body>
+    <div  onload="updateTime()">
     <header id="header1">Welcome to the Itera Park Serveillance Solution</header>
     <p>The current date and time is: 
         <p id="datetime"> </p>
     </p>
-    <!--<script type="text/javascript">
-    function updateTime() {
-        var d = new Date();
-        var d1 = new Date().toDateString();
-        var t1 = d.getHours();
-        var t2 = d.getMinutes();
-        var t3 = d.getSeconds();
-        document.getElementById("datetime").innerHTML = (d1 + "\n" + t1 + ":" + t2 + "\n");
-
-        setTimeout(updateTime,1000);
-    }
-    updateTime();
-    </script>-->
+    </div>
 </body>
 
 <footer><i>Copyright &copy <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script></footer>
