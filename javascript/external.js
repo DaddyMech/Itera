@@ -7,3 +7,9 @@ function updateTime() {
     document.getElementById("datetime").innerHTML = ("The date and time is: " + d1 + "\n" + t1 + ":" + t2 + ":" + t3 + "\n");
     setTimeout(updateTime,1000);
 }
+
+function copyright() {
+    var year = new Date();
+    document.getElementById("footer1").innerHTML = ("Copyright &copy " + year.getFullYear());
+       
+}
