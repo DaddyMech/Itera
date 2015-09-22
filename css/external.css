@@ -1,16 +1,22 @@
 body{
-
+    background-color: aquamarine;
+    background-repeat: round;
+    text-align: center;
 }
 
 header{
-    
+    background-color: azure;
+    border-radius: 1;   
 }
 
 p {
-    
+    text-align: left;
 }
 
 div {
 
 }
 
+footer {
+    text-align: right;
+}
