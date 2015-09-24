@@ -13,3 +13,4 @@ function copyright() {
     document.getElementById("footer1").innerHTML = ("Copyright &copy " + year.getFullYear());
        
 }
+
